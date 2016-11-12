@@ -3,7 +3,11 @@
 }
 
 html {
-	
+	background: rgba(0,0,0,1);
+	background-image: url(../images/arcade-cabinet-2.png);
+	background-size: cover;
+	min-height: 100%;
+
 }
 
 a {
@@ -25,8 +29,10 @@ header {
 }
 
 body {
-   
-    background: #626262;
+
+
+
+     
   }
       
 main {
@@ -57,8 +63,24 @@ main {
 	line-height: 22px;
 }
 
+
+.inside {
+	border: 3px solid #ef9d00;
+}
+
 #nav a:hover {
 	color: #FFFFFF;
+}
+
+.logo-home {
+	width: 50%;
+}
+
+#home {
+	border: 1px solid #575757;
+	padding: 20px;
+	background: radial-gradient(#363636, #141414);
+	min-height: 100%;
 }
 
 main {
@@ -67,6 +89,11 @@ main {
 	text-align: center;
 }
 
+main.home {
+	min-height: 300px;
+	padding: 40px;
+	text-align: center;
+}
 
 #gameMessage {
 	font-family: 'Ubuntu Condensed', sans-serif;
@@ -106,6 +133,31 @@ main {
 	vertical-align: middle;
 	text-align: center;
 	
+
+}
+
+#footer-home {
+
+	font-family: 'VT323', monospace;
+	font-size: 48px;
+	line-height: 48px;
+	color: #fdde67;
+	vertical-align: middle;
+	text-align: center;
+	padding-bottom: 40px;
+
+
+}
+
+#header-home {
+	padding: 40px;
+	font-family: 'VT323', monospace;
+	font-size: 48px;
+	line-height: 48px;
+	color: #fdde67;
+	vertical-align: middle;
+	text-align: center;
+
 
 }
 
