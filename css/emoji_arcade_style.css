@@ -194,6 +194,7 @@ main.home {
 
 .hide-card {
 	opacity: 0;
+	display: none;
 }
 
 img.qm {
