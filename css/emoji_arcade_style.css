@@ -168,8 +168,40 @@ main.home {
 
 }
 
+.emoji-card {
+	width: 90%;
+	height: 90%;
+	padding: 10px;
+	text-align: center;
+	vertical-align: middle;
+	box-shadow: 8px 8px 7px rgba(0, 0, 0, 0.2);
+	position: relative;
+}
+
+.face-up {
+	background: #FFFFFF;
+	z-index: 1000;
+}
+
+.face-down {
+	background: #f6bf00;
+	z-index: 1000;
+}
+
+img.qm {
+	width: 90%;
+	position: relative;
+	top: 0;
+	left: 0;
+}
+
 img.emoji {
 	width: 90%;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	margin-right: 5px;
+	margin-bottom: 5px;
 }
 
 img.game-icon {
@@ -181,7 +213,6 @@ img.game-icon {
 img.game-icon-logo {
 	width: 70%;
 }
-
 .gameIcon {
 	text-align: center;
 	font-family: 'VT323', monospace;
@@ -191,13 +222,10 @@ img.game-icon-logo {
 	margin-bottom: 15px;
 }
 
-.emoji-card {
-	width: 90%;
-	background: #FFFFFF;
-	padding: 10px;
-	text-align: center;
-	vertical-align: middle;
-	box-shadow: 8px 8px 7px rgba(0, 0, 0, 0.2);
+
+
+.show-me {
+	z-index: 2000;
 }
 
 main.memoji {
