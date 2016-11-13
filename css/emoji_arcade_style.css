@@ -168,32 +168,6 @@ main.home {
 
 }
 
-<<<<<<< HEAD
-=======
-img.emoji {
-	width: 90%;
-}
-
-img.game-icon {
-	width: 200px;
-	margin-bottom: 30px;
-	box-shadow: 8px 8px 7px rgba(0, 0, 0, 0.2);
-}
-
-img.game-icon-logo {
-	width: 70%;
-}
-
-.gameIcon {
-	text-align: center;
-	font-family: 'VT323', monospace;
-	font-size: 48px;
-	line-height: 48px;
-	color: #fdde67;
-	margin-bottom: 15px;
-}
-
->>>>>>> 39418ea7db15b380f9420d67867465b80bc91592
 .emoji-card {
 	width: 90%;
 	height: 90%;
@@ -317,11 +291,6 @@ footer {
 	font-family: 'VT323', monospace;
 	font-size: 48px;
 	color: #ffffff;
-<<<<<<< HEAD
-}
-
-.startText {
-=======
 }
 
 .startText {
@@ -331,15 +300,6 @@ footer {
 
 }
 
-.pressStart {
->>>>>>> 39418ea7db15b380f9420d67867465b80bc91592
-	font-family: 'VT323', monospace;
-	font-size: 48px;
-	color: #ffffff;
-
-}
-
-<<<<<<< HEAD
 .pressStart {
 	font-family: 'VT323', monospace;
 	font-size: 48px;
@@ -354,15 +314,6 @@ footer {
 
 }
 
-=======
-.emojiCredit {
-	font-family: 'VT323', monospace;
-	font-size: 48px;
-	color: #fdde67;
-
-}
-
->>>>>>> 39418ea7db15b380f9420d67867465b80bc91592
 .emojiCoin{
 	width: 150px;
 	margin-top: 10px;
