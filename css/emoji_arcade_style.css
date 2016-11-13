@@ -197,6 +197,10 @@ main.home {
 	display: none;
 }
 
+.show-card {
+	opacity: 0;
+}
+
 img.qm {
 	width: 90%;
 	position: relative;
