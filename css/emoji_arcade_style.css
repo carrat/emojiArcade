@@ -22,21 +22,26 @@ a:hover {
 
 header {
 	background: radial-gradient(#363636, #141414);
-	height: 80px;
-	padding: 20px;
+	padding-right: 20px;
 	padding-left: 40px;
+	padding-bottom: 5px;
+	padding-top: 5px;	
+	border-bottom: 1px solid #292929;
 	
 }
 
 body {
+  
+}
 
-
-
-     
-  }
+.container {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	box-shadow: 15px 15px 7px rgba(0, 0, 0, 0.4);
+	border: 5px solid #292929;
+}
       
-
-
 #nav {
 	color: #FFFFFF;
 	padding: 0px;
@@ -57,6 +62,25 @@ body {
 	margin-bottom: 0px;
 	line-height: 22px;
 	
+}
+
+.minigame-logo {
+	padding-top: 20px;
+}
+
+#welcome {
+	font-family: 'VT323', monospace;
+	font-size: 32px;
+	color: #ffffff;
+	vertical-align: middle;
+	display: table-cell;
+	padding-top: 10px;
+	padding-bottom: 5px;
+	text-align: center;
+}
+
+.scores-button {
+	padding-top: 15px;
 }
 
 
@@ -108,18 +132,7 @@ main.home {
 	color: #ffffff;
 	vertical-align: middle;
 	padding-top: 10px;
-
-}
-
-#welcome {
-	font-family: 'VT323', monospace;
-	font-size: 32px;
-	line-height: 18px;
-	color: #ffffff;
-	vertical-align: middle;
-	display: table-cell;
-	padding-top: 5px;
-	text-align: center;
+	padding-bottom: 20px;
 
 }
 
@@ -270,18 +283,13 @@ footer {
 	background: radial-gradient(#363636, #141414);
 	padding-left: 20px;
 	padding-right: 20px;
-	padding-bottom: 5px;
+	padding-bottom: 1px;
 	padding-top: 10px;
 	text-align: center;
 	color: #FFFFFF;
+	border-top: 1px solid #292929;
 }
 
-.container {
-	margin-left: auto;
-	margin-right: auto;
-	box-shadow: 15px 15px 7px rgba(0, 0, 0, 0.1);
-	border: 1px solid #ef9d00;
-}
 
 
 .modal-content h4 {
@@ -541,11 +549,13 @@ footer {
 
 	.emoji-card {
 	width: 98%;
-	background: #FFFFFF;
+	height: 98%;
 	padding: 2px;
 	text-align: center;
 	vertical-align: middle;
-	}
+	position: relative;
+	border: 1px solid #d58f09;
+}
 
 	.col {
 		margin-bottom: 7px;
