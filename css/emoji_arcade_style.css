@@ -249,15 +249,14 @@ footer {
 }
 
 .emoji-clue {
-	width: 100%;
-	height: 100%;
-	display: block;
+	pointer-events: none;
 	-webkit-transform:scale(5.25);
     -moz-transform:scale(5.25); 
     -ms-transform:scale(5.25); 
     -o-transform:scale(5.25);
-     transform:scale(5.25);
-	
+     transform:scale(5.25);	
+
+
 }
 
 #emojiOptions {
@@ -279,7 +278,6 @@ footer {
     -ms-transform:scale(1); 
     -o-transform:scale(1);
      transform:scale(1);
-
 }
 
 .emoji-option-ro {
