@@ -296,13 +296,35 @@ footer {
 }
 
 .modal-content {
-	color: #000000;
+	color: #ffffff;
+	background: rgba(0, 0, 0, 0.8);
 	text-align: left;
+	border: 2px solid #ffb608;
+	padding: 3rem;
+	font-family: 'VT323', monospace;
+	color: #ffffff;
+	font-size: 36px;
+}
+
+.modal {
+
 }
 
 .modal-content h4 {
-	color: #000000;
-	font-size: 3rem;
+	font-family: 'VT323', monospace;
+	color: #ffb608;
+	font-size: 4rem;
+	padding: 0px;
+}
+
+.high-score-row {
+	margin-bottom: 2px;
+	border-bottom: 1px dotted #ffffff;
+}
+
+.score-num {
+	text-align: center;
+
 }
 
 .musicContainer{
