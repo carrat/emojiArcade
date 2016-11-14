@@ -136,6 +136,11 @@ main.home {
 
 }
 
+.modal-display {
+	display: block;
+	z-index: 3000;
+}
+
 #gameTime {
 	font-family: 'VT323', monospace;
 	font-size: 60px;
@@ -290,9 +295,13 @@ footer {
 	border-top: 1px solid #292929;
 }
 
-
+.modal-content {
+	color: #000000;
+	text-align: left;
+}
 
 .modal-content h4 {
+	color: #000000;
 	font-size: 3rem;
 }
 

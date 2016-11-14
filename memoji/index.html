@@ -6,27 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <!-- add jQuery -->
-    <script
-    src="https://code.jquery.com/jquery-3.1.0.js"   
-    integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk="   
-    crossorigin="anonymous">   
-    </script>
-
-       <!-- Add Font Awesome -->
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
-<!-- Add materialize stylesheet -->
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <!-- Add materialize stylesheet -->
     <link href="../css/materialize.css" rel="stylesheet" type="text/css" media="screen,projection">
+    <!--load Materialize javascript - lets Materialize framework work-->
+    <script src="../js/materialize.js"></script>
+
+<!-- Add Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <!-- Add unique stylesheet -->
     <link href="../css/emoji_arcade_style.css" rel="stylesheet" type="text/css">
-
 <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <!-- Add Google Web Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700|Press+Start+2P|Rubik:300,300i,400,400i,500,500i,700,700i,900,900i|Share+Tech+Mono|Ubuntu+Condensed|VT323" rel="stylesheet">
-
-<!--load Materialize javascript - lets Materialize framework work-->
-    <script src="../js/materialize.js"></script>
 
     <script src="../js/index.js"></script>
 
@@ -50,9 +43,9 @@
       </div>
       <div class="col s12 m4 l4" id="nav">
           <!--<a href="/memoji/new"><img src="../images/start.png" width="80"></a> -->
-          <a href="#modalScores" class="modal-trigger waves-effect"><img src="../images/scores.png" width="80" class="scores-button"></a> 
+          <a class="waves-effect modal-trigger" href="#modalScores"><img src="../images/scores.png" width="80" class="scores-button"></a> 
 
-          <div id="modalScores" class="modal" >
+          <div id="modalScores" class="modal">
             <div class="modal-content">
               <h4 class="modal-title">High Scores</h4>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam pharetra est quis bibendum lobortis. Quisque venenatis gravida enim in ornare. Quisque ante ante, fringilla sit amet risus non, suscipit sollicitudin urna. Aenean mattis eros eu orci posuere dictum. </p>
@@ -338,6 +331,8 @@
 
 $(document).ready(function(){
 
+  
+
   $('.emoji-card').on('click', flipCard)
 
   // Flip Card
@@ -353,6 +348,11 @@ $(document).ready(function(){
       $(cardQM).attr('class', 'qm show-card');
       $(cardImage).attr('class', 'emoji');
     }
+
+
+  $('.modal-trigger').on('click', function() {
+    $("#modalScores").openModal();
+  });
 
 
 });
