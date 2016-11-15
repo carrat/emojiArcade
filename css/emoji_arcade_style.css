@@ -303,6 +303,7 @@ img.emoji {
 	margin-right: 5px;
 	margin-bottom: 5px;
 	opacity: 0;
+	pointer-events: none;
 }
 
 img.game-icon {
