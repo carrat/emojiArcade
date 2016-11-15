@@ -106,7 +106,7 @@
                     <div class="col s2 m2 l2">
                       <div class="emoji-card face-down" id="1">
                         <img src="../emoji/game/qm.png" class="qm" id="qm-1">
-                        <img src="../emoji/animals/1f40a.png" class="emoji hide-card" id="card-1">
+                        <img src="../emoji/animals/1f40a.png" class="emoji" id="card-1">
                       </div>
                     </div>
                     <div class="col s2 m2 l2">
@@ -373,12 +373,20 @@ $(document).ready(function(){
       cardImage = "#card-" + cardSelected;
       cardDiv = "#" + cardSelected;
 
-      $(cardDiv).attr('class', 'emoji-card face-up');
+      $(cardDiv).attr('class', 'emoji-card nameOfThingtoFlip');
+
       $(cardQM).attr('class', 'qm show-card');
-      $(cardImage).attr('class', 'emoji');
+
+      $(cardDiv).css('background','radial-gradient(#f6bf00, #f4ad01)');
+      setTimeout(function(){ $(cardDiv).css('background','#FFFFFF'); },1000)
+
+      $(cardImage).css('opacity','0)');
+      setTimeout(function(){ $(cardImage).css('opacity','100'); },500)
+
+
+
+
     }
-
-
 
 
 });
