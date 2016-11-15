@@ -6,7 +6,6 @@ html {
 	background: rgba(0,0,0,1);
 	background-image: url(../images/arcade-cabinet-5.png);
 	background-size: cover;
-	min-height: 100%;
 }
 
 a {
@@ -79,7 +78,6 @@ main.emojid {
 	border: 0px solid #575757;
 	padding: 20px;
 	background: radial-gradient(#363636, #141414);
-	min-height: 100%;
 }
 
 #footer-home {
@@ -100,6 +98,7 @@ main.emojid {
 	color: #fdde67;
 	vertical-align: middle;
 	text-align: center;
+	padding-bottom: 5px;
 }
 
 footer {
@@ -114,11 +113,15 @@ footer {
 }
 
 .container {
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 10px;
 	box-shadow: 15px 15px 7px rgba(0, 0, 0, 0.4);
 	/*border: 5px solid #292929;*/
+}
+
+.centerVH{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
       
 #nav {
@@ -398,6 +401,26 @@ img.game-icon-logo {
 	font-family: 'VT323', monospace;
 	font-size: 48px;
 	color: #fdde67;
+}
+
+.loginText{
+	font-family: 'VT323', monospace;
+	font-size: 36px;
+	color: #ffffff;
+	padding-top: 15px;
+}
+
+.loginButton{
+	font-family: 'VT323', monospace;
+	font-size: 36px;
+	color: #ffffff;
+
+}
+
+.loginButton:hover{
+	color: #fdde67;
+	text-decoration: underline;
+
 }
 
 .hide{

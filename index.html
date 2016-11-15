@@ -21,9 +21,12 @@
     <!-- Ensures the page is mobile responsive. -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
+	<meta name="google-signin-client_id" content="36382136108-7kc90f14ku4qfrf4s07rdihonthp5hrk.apps.googleusercontent.com">
+	<script src="https://apis.google.com/js/platform.js" async defer></script>
+
 </head>
 <body>
-	<div class="container" id="home">     
+	<div class="container centerVH" id="home">     
 	<!-- Allows interior border inside container padding -->
   		<div class="inside">
   		<!-- header styled special for home page -->
@@ -34,9 +37,26 @@
 	   		<main class="home">
 		   		<div class="row">
 		   			<div class="col s12">
-		   				<p class="playerOne">Ready Player One </p>
+		   				<p class="playerOne">Ready Player One</p>
+		   				<div class="loginText">
+		   				<div class="g-signin2" data-onsuccess="onSignIn"></div>
+   <a href="#" onclick="signOut();">Sign out</a> or <a href="#modalLogin" class="loginButton modal-trigger">Play as Guest</a>
+		   				</div>
+
+		   				<div id="modalLogin" class="modal">
+				            <div class="modal-content">
+				              <h4 class="modal-title">Login as Guest</h4>
+				              <div class="row">
+				                <div class="col s12"> Enter Form</div>
+				              </div>
+				            </div>
+				        </div> 
+
+
 					</div>
 				</div>
+
+
 				<div class="row">
 					<div class="col s0 m2 l2"></div>
 
@@ -75,6 +95,23 @@
       	$('.modal-trigger').leanModal();
       });
 </script>
+
+  <script>
+    function onSignIn(googleUser) {
+        var profile = googleUser.getBasicProfile();
+        console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
+        console.log('Name: ' + profile.getName());
+        console.log('Image URL: ' + profile.getImageUrl());
+        console.log('Email: ' + profile.getEmail());
+    }
+
+    function signOut() {
+        var auth2 = gapi.auth2.getAuthInstance();
+        auth2.signOut().then(function() {
+            console.log('User signed out.');
+        });
+    }
+    </script>
 
 </body>
 </html>
