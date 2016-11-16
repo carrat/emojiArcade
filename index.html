@@ -147,6 +147,11 @@ $(".emojiCoin").on("click", $(".emojiCoin"), function(){
 		.attr("class", "pressStart")
 			.attr("value", "startGame");
 	}
+
+	$(".pressStart").on("click", $(".startText"), function(){
+		window.location.href="/games"; 
+	})
+
 });
 
 $(".startText").on("click", $(".startText"), function(){
@@ -163,6 +168,8 @@ $(".startText").on("click", $(".startText"), function(){
 		}
 	}
 })
+
+
 
     </script>
 
