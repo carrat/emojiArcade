@@ -152,7 +152,11 @@ $(".emojiCoin").on("click", $(".emojiCoin"), function(){
 $(".startText").on("click", $(".startText"), function(){
 	if(coin < 2){
 		alert("Not enough coins.")
-	}else{
+	}
+	else if (coin =2) {
+
+	}
+	else{
 		coin = coin - 2;
 		console.log(coin);
 		$(".emojiCredit").html("Credit " + coin + "/2")	
