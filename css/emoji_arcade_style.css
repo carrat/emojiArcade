@@ -494,10 +494,10 @@ img.game-icon-logo-small {
 /* lower opactiy on timer */
 
 .randomName{
-	-webkit-animation: invisible 1s linear;
-	-moz-animation: invisible 1s linear;
-	-o-animation: invisible 1s linear;
-	animation: invisible 1s linear;
+	-webkit-animation: invisible .5s linear;
+	-moz-animation: invisible .5s linear;
+	-o-animation: invisible .5s linear;
+	animation: invisible .5s linear;
 }
 
 @-webkit-keyframes invisible {
@@ -521,10 +521,10 @@ img.game-icon-logo-small {
 /* raise opacity on timer */
 
 .appear{
-	-webkit-animation: reappear 1s linear;
-	-moz-animation: reappear 1s linear;
-	-o-animation: reappear 1s linear;
-	animation: reappear 1s linear;
+	-webkit-animation: reappear .5s linear;
+	-moz-animation: reappear .5s linear;
+	-o-animation: reappear .5s linear;
+	animation: reappear .5s linear;
 }
 
 @-webkit-keyframes reappear {
@@ -546,10 +546,10 @@ img.game-icon-logo-small {
 
 /* Card Flip */
 .nameOfThingtoFlip{
-	-webkit-animation: cardReveal 1s linear;
-	-moz-animation: cardReveal 1s linear;
-	-o-animation: cardReveal 1s linear;
-	animation: cardReveal 1s linear;
+	-webkit-animation: cardReveal .5s linear;
+	-moz-animation: cardReveal .5s linear;
+	-o-animation: cardReveal .5s linear;
+	animation: cardReveal .5s linear;
 
 }
 
