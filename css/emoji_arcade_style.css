@@ -318,6 +318,11 @@ img.game-icon {
 img.game-icon-logo {
 	width: 70%;
 }
+
+img.game-icon-logo-small {
+	width: 30%;
+	padding-top: 30px;
+}
 .gameIcon {
 	text-align: center;
 	font-family: 'VT323', monospace;
@@ -335,6 +340,7 @@ img.game-icon-logo {
 	font-family: 'VT323', monospace;
 	color: #ffffff;
 	font-size: 36px;
+	z-index: 1005;
 }
 
 .modal-content h4 {
@@ -342,6 +348,9 @@ img.game-icon-logo {
 	color: #ffb608;
 	font-size: 4rem;
 	padding: 0px;
+}
+
+.modal {
 }
 
 .high-score-row {
@@ -377,7 +386,18 @@ img.game-icon-logo {
 	color: #ffffff;
 }
 
+.small-link {
+	color: #FFFFFF;
+	font-size: 22px;
+}
+
 .pressStart {
+	font-family: 'VT323', monospace;
+	font-size: 48px;
+	color: #ffffff;
+}
+
+.choose-text {
 	font-family: 'VT323', monospace;
 	font-size: 48px;
 	color: #ffffff;
