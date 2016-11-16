@@ -4,7 +4,7 @@
 
 var coin = 0;
 
-var introSong = new Audio("sounds/arcadeSong.mp4");
+var introSong = new Audio("sounds/arcadeSong.mp3");
 var coinSound = new Audio("sounds/cha-ching.wav")
 	// Calls the intro song upon start of the webpage along with a eternal loop.
 	introSong.play();
