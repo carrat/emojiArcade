@@ -130,6 +130,10 @@ footer {
 	text-align: center;
 	padding-top: 20px;
 }
+
+.guestLogin {
+	display: inline-block;
+}
       
 #nav {
 	color: #FFFFFF;
