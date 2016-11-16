@@ -143,14 +143,9 @@ $(".emojiCoin").on("click", $(".emojiCoin"), function(){
 	$(".emojiCredit").html("Credit " + coin + "/2");
 
 	if(coin == 2){
-		$(".startText").html("Start Game")
-		.attr("class", "pressStart")
-			.attr("value", "startGame");
+		$(".startText").html("<a href='/games' class='pressStart'>Start Game</a>");
 	}
 
-	$(".pressStart").on("click", $(".startText"), function(){
-		window.location.href="/games"; 
-	})
 
 });
 
