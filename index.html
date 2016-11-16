@@ -37,7 +37,7 @@
 	   		<main class="home">
 		   		<div class="row">
 		   			<div class="col s12" id="loginBlock">
-		   				<p class="playerOne">Ready Player One</p>
+		   				<p class="playerOne">Ready <div id="wat">Player One</div></p>
 		   				<div class="loginFunctions">
 		   				<div class="g-signin2 googleBlock" data-onsuccess="onSignIn"></div>
    <a href="#" onclick="signOut();">Sign out</a> <div class="guestLogin">or <a href="#modalLogin" class="loginButton modal-trigger">Play as Guest</a></div>
@@ -80,15 +80,13 @@
 		    </div>
 
 		    <div id="modalDev" class="modal">
-            <div class="modal-content">
-              <h4 class="modal-title">Development Team</h4>
-              <div class="row">
-                <div class="col s12">text</div>
-
-              </div>
-
-            </div>
-          </div>   
+	            <div class="modal-content">
+	              <h4 class="modal-title">Development Team</h4>
+	              	<div class="row">
+	                	<div class="col s12">text</div>
+					</div>
+	            </div>
+            </div>   
     	</div>
 	</div>
 	
@@ -106,6 +104,8 @@
         console.log('Name: ' + profile.getName());
         console.log('Image URL: ' + profile.getImageUrl());
         console.log('Email: ' + profile.getEmail());
+
+        $("#wat").html('Name: ' + profile.getName());
     }
 
     function signOut() {
