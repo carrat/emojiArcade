@@ -91,6 +91,15 @@ main.emojid {
 	padding-bottom: 10px;
 }
 
+.leftAlign {
+	text-align: left;
+}
+
+.rightAlign {
+	text-align: right;
+}
+
+
 #header-home {
 	padding: 40px;
 	font-family: 'VT323', monospace;
