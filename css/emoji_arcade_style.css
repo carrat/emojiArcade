@@ -131,6 +131,10 @@ footer {
 	padding-top: 20px;
 }
 
+.timer {
+	display: inline-block;
+}
+
 .guestLogin {
 	display: inline-block;
 }
