@@ -38,7 +38,7 @@
       </div>
 
       <div class="col s12 m4 l4"  id="welcome">
-        Welcome, Player!
+        Welcome, <span id="wat">Player One</span>
       </div>
       <div class="col s12 m4 l4" id="nav">
           <!--<a href="/memoji/new"><img src="../images/start.png" width="80"></a> -->
@@ -362,6 +362,16 @@ $(document).ready(function(){
   $('.modal-trigger').leanModal();
 
   $('.emoji-card').on('click', flipCard)
+
+  function onSignIn(googleUser) {
+        var profile = googleUser.getBasicProfile();
+        console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
+        console.log('Name: ' + profile.getName());
+        console.log('Image URL: ' + profile.getImageUrl());
+        console.log('Email: ' + profile.getEmail());
+
+        $("#wat").html(profile.getName());
+    }
 
   // Flip Card
     function flipCard() {
